@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compteur</title>
+    <link rel="stylesheet" href="custom.css">
+    <script src="compteur.js" defer></script>
+</head>
+<body>
+    <img src="icon-removebg-preview.png" alt="logo" class="logo">
+    <div class="container">
+        <h2>Compteur</h2>
+            <div class="compteur">
+                <div class="moins"><span>-</span> </div> 
+                <div class ="ecran"><span>0</span></div>
+                <div class="plus"><span>+</span></div>
+                <div class="alert_Error">
+                    <p>SVP entrer que des nombres positif</p>
+                    <button class="btnreset">Okey</button>
+                </div>  
+            </div>
+
+            <div class="compte">
+                <h3>Compte a rebour</h3>    
+                <p><span class="seconde">00</span> : <span class="ten">00</span></p>
+                <button class="buttonD">valider</button>
+                <button class="buttonS">stop</button>
+                <button class="buttonE">effacer</button>
+            </div>
+        
+            <div class="time">
+                <h4>Timer</h4>
+                <p><span class="Heures">00</span> H: <span class="Minutes">00</span> M: <span class="Seconds">00</span> S</p>
+                <input type="number" placeholder="heures" class="inputHrs">
+                <input type="number" placeholder="minute" class="inputMin"> <br>
+                <button class="btnD">valider</button>
+                <button class="btnS">stop</button>
+                <button class="btnE">effacer</button>
+            </div>
+        
+    </div>
+    
+    <div class="alert">
+        <p>Finis, le Temps ces écoulé merci de reprendre</p>
+        <button class="btnreset">Okey</button>
+    </div>
+    <div class="alertError">
+        <p>le temps n'es pas negative!, SVP entrer que des nombres positif</p>
+        <button class="btnreset">Okey</button>
+    </div>
+</body>
+</html>

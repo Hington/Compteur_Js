@@ -1,0 +1,149 @@
+*,::after,::before{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.logo{
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    left: 65%;
+    top: 25%;
+    z-index: 100;
+
+}
+.container{
+    margin: 15px auto;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.container .pink{
+    text-align: center;
+    text-transform: capitalize;
+    padding:25px;
+    background-color: #f769ac;
+    border-radius:5px;
+    color: #fff ;
+}
+.container .bleu{
+    text-align: center;
+    text-transform: capitalize;
+    padding:25px;
+    background-color: #59f4f7;
+    border-radius:5px;
+    color: #000 ;
+}
+.container .black{
+    text-align: center;
+    text-transform: capitalize;
+    padding:25px;
+    background-color: black;
+    border-radius:5px;
+    color: white;
+}
+.compteur{
+    margin-top:45px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.compteur span{
+    padding:25px;
+    cursor: pointer;
+    
+
+}
+.compteur span:hover{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.alert,.alertError ,.alert_Error {
+
+    width: 50%;
+    position: absolute;
+    padding: 25px;
+    height: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius:5px;
+    display: none;
+}
+.alert,.alertError,.alert_Error {
+    background: #fff;
+    box-shadow: 1px 0px 2px 2px #f2f2f2;
+}
+
+.alert p, .alertError p,.alert_Error p{
+    padding:25px;
+    margin-bottom: 0.5px;
+    font-size:  18px;
+    text-transform: capitalize;
+}
+
+.alert .btnreset, .alertError .btnreset ,.alert_Error .btnreset {
+    padding: 10px;
+    width: 60%;
+    position: relative;
+    left: 50%;
+    transform: translate( -50%);
+    border-radius:5px;
+    border: none;
+    text-transform: uppercase;
+    font-weight:bold;
+    cursor: pointer;
+    
+}
+.alert .btnreset,.alertError .btnreset,.alert_Error .btnreset {
+    background:#fa0202;
+    color: #fff ;
+    
+}
+
+.ActiveAlert, .ActiveAlertError,.activeAlert_Error{
+    display: block;
+}
+
+.compte p, .time p{
+    align-items: center;
+    margin : 15px auto;
+    position : relative;
+    left: 50%;
+    transform: translate(-10%)
+
+}
+.compte button, .time button{
+    padding :5px;
+    width: 30%;
+    margin-bottom: 15px;
+    border: none;
+    border-radius:  5px;
+    text-transform: capitalize;
+    background-color:#f769ac;
+    cursor: pointer;
+    color: #fff;
+}
+
+.compte button:hover, .time button:hover{
+    transform: translateX(2px);
+}
+.time input{
+    padding:5px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 0 1px 1px #c2c2c2;
+    position : relative;
+    left: 30%;
+    transform: translate(-80%)
+}
+.time input[placeholder]{
+    margin-left: 25px;
+    text-align: center;
+}
